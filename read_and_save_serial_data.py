@@ -24,11 +24,11 @@ image_height = 240
 dataset_folder = "fire_detection_sensor_fusion_dataset"
 current_dataCount = 1
 # note that the script will automatically split the data for training and testing
-#number_of_samples_to_collect = 60 
-number_of_samples_to_collect = 10
-#dataset_class = "safe_environment"
+number_of_samples_to_collect = 60 
+#number_of_samples_to_collect = 10
+dataset_class = "safe_environment"
 #dataset_class = "fire"
-dataset_class = "safe_environment_test"
+#dataset_class = "safe_environment_test"
 #dataset_class = "fire_test"
 save_to_directory = dataset_folder + '/' + dataset_class
 csv_filename = save_to_directory + '/' + dataset_class + '.csv'

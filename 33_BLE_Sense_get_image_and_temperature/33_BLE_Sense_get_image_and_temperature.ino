@@ -1,6 +1,7 @@
 /*
-    This Arduino code captures an image using the OV7670 and gets a temperature reading using the HTSS221 sensor
-    The code uses an updated OV7670 driver by Edge Impulse which makes it faster to capture images
+    This Arduino code captures an image using the OV7675 and gets a temperature reading using the HTSS221 sensor.
+    The code uses an updated OV7675 driver developed by Edge Impulse and it makes it much faster to capture images as compared to the OV767X library example.
+    Edge Impulse website: https://edgeimpulse.com/
     Developed by: Solomon Muhunyo Githu, 8th July 2024.
 */
 

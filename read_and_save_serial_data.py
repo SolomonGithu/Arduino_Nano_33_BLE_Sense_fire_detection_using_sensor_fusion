@@ -13,6 +13,8 @@ import numpy as np
 from time import sleep
 
 # Configure the serial port and baud rate (adjust as needed)
+# In Windows OS, serial ports are represented as COMx
+# In Linux and MacOS, serial ports are represented as /dev/ttyUSBx
 SERIAL_PORT = 'COM3'    # Replace with your actual serial port
 BAUD_RATE = 115200      # Needs to be the same baud rate as the Arduino board!
 

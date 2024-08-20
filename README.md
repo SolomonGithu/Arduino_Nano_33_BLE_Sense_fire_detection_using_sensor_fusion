@@ -1,5 +1,7 @@
 # Detecting fires using sensor fusion and TinyML
 
+Please have a look at the [project's documentation](https://docs.edgeimpulse.com/experts/air-quality-and-environmental-projects/fire-detection-sensor-fusion-arduino-nano) for a more detailed overview.
+
 This repository demonstrates sensor fusion by training a Machine Learning model to detect fires using both image and environmental (temperature) data. A custom multi-input Convolutional Neural Network (CNN) model is used to classify if there is a fire or not using both image and temperature data. To achieve this, [tensor slicing](https://www.tensorflow.org/guide/tensor_slicing) technique is utilized to work with sub-sections of tensors. Each input to the model consists of both an image and a corresponding scalar value (temperature). The model's input tensor is sliced into an image and temperature tensor. The outputs from these two tensors are then combined and processed further to produce an output (classification of the various classes). Tensor slicing technique is advantageous in this case as well because Edge Impulse does [not support multi-input models](https://forum.edgeimpulse.com/t/could-not-work-with-multi-input-tflite-model/7216) at this time. Later, the [Edge Impulse](https://edgeimpulse.com/) platform is used to deploy the sensor fusion model.
 
 ![Inference demonstration](media/inference_demonstration.png)
